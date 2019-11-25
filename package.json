@@ -11,7 +11,9 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -rw --output dist/css scss"
+    "scss": "node-sass -rw --output dist/css --output-style expanded scss",
+    "server": "node ./index.js",
+    "server-scss": "npm run scss & npm run server"
   },
   "author": "Tom Verhaeghe",
   "license": "ISC"
