@@ -1,0 +1,38 @@
+@import 'variables.scss';
+
+body {
+  font-family: 'Open Sans', Verdana, sans-serif;
+  background-color: #EEEEEE;
+  margin: 3em;
+  font-size: 17px
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+h3 {
+  color: #0C343D;
+  font-size: 24px;
+  line-height: 40px;
+  font-family: Arial, sans-serif;
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background-color: #176F83;
+  }
+}
+
+@import 'components/components';

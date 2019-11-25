@@ -1,0 +1,40 @@
+// Button Atom
+.button {
+  font-weight: bold;
+  border-radius: 6px;
+  padding: 12px 20px;
+  border: 3px solid transparent;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    border-color: $ui-color-06;
+    -webkit-box-shadow: 7px 10px 21px -13px rgba(0,0,0,0.71);
+    -moz-box-shadow: 7px 10px 21px -13px rgba(0,0,0,0.71);
+    box-shadow: 7px 10px 21px -13px rgba(0,0,0,0.71);
+  }
+
+  &--tertiary {
+    color: #555555;
+    border-color: #555555;
+  }
+  &--secondary {
+    color: #555555;
+    border-color: #A7134D;
+  }
+  &--disabled {
+    color: #BBBBBB;
+    border-color: #bbbbbb;
+    &:hover {
+      background-color: #FFFFFF;
+      color: #BBBBBB;
+      border-color: #BBBBBB;
+      -webkit-box-shadow: 0 0 0 0 #FFFFFF;
+      -moz-box-shadow: 0 0 0 0 #FFFFFF;
+      box-shadow: 0 0 0 0 #FFFFFF;
+
+      cursor: not-allowed;
+    }
+  }
+}

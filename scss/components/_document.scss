@@ -1,0 +1,40 @@
+.document {
+  background-color: #FFFFFF;
+  border: 1px solid #999999;
+  padding: $box-padding-tb $box-padding-lr;
+  display: flex;
+  margin-bottom: $common-item-gap;
+
+  // Define column gap:
+  & > div {
+    margin-left: $box-gap;
+  }
+  & > div:first-child {
+    margin-left: 0;
+  }
+
+  // Left column: Title and metadata
+  &-metadata {
+    flex-grow: 1;
+    &__title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #555555;
+    }
+    &__short-description {
+      color: #222222;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  }
+
+  // Right column: Action buttons
+  &__actions {
+    column-gap: 20px;
+  }
+
+  &--accented {
+    background-color: #F6F6F6;
+  }
+}

@@ -1,0 +1,10 @@
+// Button list molecule
+.button-list {
+  display: flex;
+  & > .button {
+    margin-right: $common-item-gap;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
