@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "live-server": "^1.2.1",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {},
